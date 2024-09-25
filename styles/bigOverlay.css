@@ -1,0 +1,88 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999; 
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    position: relative;
+}
+
+.no-scroll{
+    overflow: hidden;
+    height: 100%;
+}
+
+#close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#detail-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#detail-content {
+    margin-top: 20px;
+}
+
+#evolution-details{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pokemon solid', sans-serif;
+}
+
+#pokemon-detail-image{
+    height: 400px;
+}
+
+#overlay-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    background-color: yellow; 
+    transition: opacity 0.3s; 
+}
+
+.nav-btn.disabled {
+    opacity: 0.5; 
+    cursor: not-allowed;
+    background-color: transparent;
+}
+.tab-button {
+    background-color: transparent;
+    color: #000; 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #007BFF;
+    color: #fff;
+}

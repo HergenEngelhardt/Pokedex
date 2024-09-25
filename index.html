@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/loading.css">
+    <link rel="stylesheet" href="./styles/bigOverlay.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/respons.css">
+    <link rel="stylesheet" href="./styles/hover.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-hollow" rel="stylesheet">
+
+    <script src="./scripts/template.js"></script>
+    <link rel="shortcut icon" href="./assets/icons/icons8-pokedex-48.png" type="image/x-icon">
+</head>
+
+<body onload="loadPokemon()">
+    <header>
+        <div id="header-logo">
+            <img src="./assets/img/pngegg.png" alt="Pokemon-Logo">
+        </div>
+        <h1>POKEDEX</h1>
+        <div class="search-container">
+         <img src="./assets/icons/lupe.png" alt="Lupe" id="search-icon" onclick="getSearchbar()">
+          <div id="searchbar" class="searchbar d-none" >
+            <input type="search" id="search-input" name="Searchbar" placeholder="Suche Pokémon...">
+            <button type="button" onclick="searchPokemon()">Pokémon suchen</button>
+            <div id="suggestions" class="d-none">
+                <div id="suggestion-item">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="notification-overlay" class="d-none">
+            <div id="notification-message"></div>
+            <button onclick="closeNotification()">Schließen</button>
+        </div>
+    </header>
+    <div id="spinner-container" class="d-none">
+        <div id="loading-spinner">
+            <img src="assets/gif/pokeball.webp" alt="Loading Spinner">
+        </div>
+    </div>
+    <div id="content">
+    </div>
+    <button id="load-more" onclick="loadMorePokemon()">Mehr Pokemon laden</button>
+
+    <!-- Overlay -->
+    <div id="overlay" class="d-none">
+        <div id="overlay-content">
+            <span id="close-overlay" onclick="closeOverlay()">×</span>
+            <h2 id="pokemon-name"></h2>
+            <div id="overlay-image">
+                <button id="prevBtn" class="nav-btn" onclick="prevPokemon()">←</button>
+                <img id="pokemon-detail-image" src="" alt="Pokemon Image">
+                <button id="nextBtn" class="nav-btn" onclick="nextPokemon()">→</button>
+            </div>
+            <div id="detail-buttons">
+                <button id="aboutBtn" class="tab-button" onclick="showAbout(currentDetails)">Über</button>
+                <button id="statsBtn" class="tab-button" onclick="showStats(currentDetails)">Statistiken</button>
+                <button id="evolutionBtn" class="tab-button" onclick="showEvolution(currentDetails)">Evolution</button>
+            </div>
+            <div id="detail-content"></div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.pokemon.com/de" target="_blank"><img src="./assets/img/pngegg.png" alt="Die Officielle Pokemon-Webseite"></a>
+        <a href="https://www.instagram.com/pokemon/?hl=de" target="_blank"><img src="./assets/icons/1725819461instagram-logo.png" alt="Instagram-Logo"></a>
+        <a href="https://x.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="./assets/icons/1691832581twitter-x-icon-png.png" alt="X-Logo"></a>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+<script src="./scripts/overlay.js"></script>
+<script src="./scripts/search.js"></script>
+<script src="./scripts/loadingscreen.js"></script>
+
+</html>
