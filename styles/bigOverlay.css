@@ -61,6 +61,10 @@
     font-family: 'Pokemon solid', sans-serif;
 }
 
+.d-flex {
+    display: flex;
+}
+
 #pokemon-detail-image{
     height: 400px;
 }

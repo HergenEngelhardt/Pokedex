@@ -10,6 +10,7 @@ function openOverlay(index) {
     currentDetails = DETAILS;
     currentIndex = index;
     document.getElementById('overlay').classList.remove('d-none');
+    document.getElementById('overlay').classList.add('d-flex');
     document.body.classList.add('no-scroll');
     let primaryType = DETAILS.types[0].type.name;
     document.getElementById('overlay-content').style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(`--${primaryType}`);
@@ -22,6 +23,7 @@ function openOverlay(index) {
 function closeOverlay() {
     document.getElementById('overlay').classList.add('d-none');
     document.body.classList.remove('no-scroll');
+    document.getElementById('overlay').classList.remove('d-flex');
 }
 
 function showAbout(DETAILS) {
