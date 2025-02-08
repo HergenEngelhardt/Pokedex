@@ -5,6 +5,10 @@ body {
     background-color: #313131;
 }
 
+#content{
+    margin-left: 3%;
+}
+
 .pokemon-card {
     display: inline-block;
     height: 220px;
@@ -72,4 +76,9 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#load-more-container{
+    display: flex;
+    justify-content: center;
 }

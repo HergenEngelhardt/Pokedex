@@ -38,6 +38,12 @@
     font-size: 24px;
 }
 
+#close-overlay:hover {
+    background-color: grey;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
 #detail-buttons {
     margin-top: 10px;
     display: flex;
