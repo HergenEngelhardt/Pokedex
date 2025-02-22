@@ -1,5 +1,5 @@
 let OFFSET = 0;
-const LIMIT = 40;
+const LIMIT = 20;
 const API_URL = 'https://pokeapi.co/api/v2/pokemon';
 const CONTENTDIV = document.getElementById('content');
 let currentDetails = null;
