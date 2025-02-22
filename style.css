@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1940px;
     box-sizing: border-box;
     background-color: #313131;
 }
@@ -52,7 +52,6 @@ button {
     cursor: pointer;
 }
 
-
 #pokemon-info h2{
     font-family: 'Pokemon Solid', sans-serif;
     font-size: 25px;
@@ -61,6 +60,18 @@ button {
     display: flex;
     justify-content: center;
 
+}
+
+#load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .d-none {
@@ -78,7 +89,3 @@ button {
     flex-direction: column;
 }
 
-#load-more-container{
-    display: flex;
-    justify-content: center;
-}
