@@ -6,7 +6,9 @@ let currentDetails = null;
 
 async function loadPokemon() {
     showSpinner();
-    createFavoritesButton();
+    if (!document.getElementById('favorites-btn')) {
+        createFavoritesButton();
+    }
     try {
         const RESPONSE = await fetch(`${API_URL}?limit=${LIMIT}&offset=${OFFSET}`);
         const DATA = await RESPONSE.json();

@@ -36,6 +36,7 @@ function updateFavoriteButtons() {
 function showFavoritesOnly() {
     let allCards = document.querySelectorAll('.pokemon-card');
     let filterActive = document.getElementById('favorites-btn').classList.contains('active');
+    let loadMoreContainer = document.getElementById('load-more-container');
     
     allCards.forEach(card => {
         let id = parseInt(card.id.replace('pokemon-card-', ''));
@@ -47,6 +48,14 @@ function showFavoritesOnly() {
             card.classList.remove('d-none');
         }
     });
+
+    if (loadMoreContainer) {
+        if (filterActive) {
+            loadMoreContainer.classList.add('d-none');
+        } else {
+            loadMoreContainer.classList.remove('d-none');
+        }
+    }
 }
 
 function toggleFavoritesFilter() {
