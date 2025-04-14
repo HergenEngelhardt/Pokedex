@@ -1,13 +1,18 @@
 function getPokecardTemplate(id, pokemon, DETAILS) {
   let primaryType = DETAILS.types[0].type.name;
+  let isFavorite = favorites.includes(id);
+  let starIcon = isFavorite ? '★' : '☆';
+  let starClass = isFavorite ? 'fav-btn favorite' : 'fav-btn';
+  
   return `
-  <div id="pokemon-card-${id}" class="pokemon-card" 
-       onclick="openOverlay(${id - 1})">  <!-- Pass the index (id - 1) to openOverlay -->
+  <div id="pokemon-card-${id}" class="pokemon-card">  
       <div class="${primaryType}">
           <div id="pokecard-header">
-              <p><b>#${id}</b></p><h3>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h3>
+              <p><b>#${id}</b></p>
+              <h3>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h3>
+              <button id="fav-btn-${id}" class="${starClass}" onclick="event.stopPropagation(); toggleFavorite(${id})">${starIcon}</button>
           </div>  
-          <img src="${DETAILS.sprites.front_default}" alt="${pokemon.name}">
+          <img onclick="openOverlay(${id - 1})" src="${DETAILS.sprites.front_default}" alt="${pokemon.name}">
           <div id="pokecard-footer">
               <p>Typ: ${DETAILS.types.map(t => `<p>${t.type.name.charAt(0).toUpperCase() + t.type.name.slice(1)}</p>`).join('')}</p>
           </div>

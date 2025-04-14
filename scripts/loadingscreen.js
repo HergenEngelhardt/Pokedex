@@ -1,4 +1,3 @@
-
 function showSpinner() {
     document.getElementById('spinner-container').classList.remove('d-none');
 }

@@ -6,7 +6,7 @@ let currentDetails = null;
 
 async function loadPokemon() {
     showSpinner();
-
+    createFavoritesButton();
     try {
         const RESPONSE = await fetch(`${API_URL}?limit=${LIMIT}&offset=${OFFSET}`);
         const DATA = await RESPONSE.json();
@@ -17,7 +17,7 @@ async function loadPokemon() {
     } catch (error) {
         console.error('Fehler beim Laden der Pokémon:', error);
     } finally {
-        hideSpinner();
+        hideSpinner(); 
     }
 }
 

@@ -1,36 +1,37 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
 footer {
     position: relative;
     height: 125px;
-    background-color: rgb(70,70,70);
+    background: linear-gradient(135deg, #464646 0%, #2a2a2a 100%);
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
     text-decoration: none;
     color: white;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+footer a:hover {
+    transform: scale(1.1);
 }
 
 footer img {
     height: 30px;
     width: auto;
-    padding-right: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+footer img:hover {
+    opacity: 1;
 }
