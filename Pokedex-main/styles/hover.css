@@ -1,0 +1,149 @@
+.water:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.fire:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.electric:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+
+.grass:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.ice:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.fighting:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.normal:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.poison:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.ground:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.flying:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.psychic:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.bug:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.rock:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.ghost:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.dragon:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.dark:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.steel:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.fairy:hover{
+    border-radius: 20px;
+    transition-duration: 250ms;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.pokemon-card img:hover{
+    transition-duration: 250ms;
+    transform: scale(1.3);
+    cursor: pointer;
+}
